@@ -20,7 +20,10 @@ class Student extends Person
 
     public function __construct($dual = null)
     {
-        $this->dual = $dual;
+        parent::__construct();
+        if ($dual != null) {
+            $this->dual = $dual;
+        }
     }
 
 
@@ -43,6 +46,10 @@ class Student extends Person
     public function render()
     {
         $this->type = "Estudiant";
-        parent::render();
+        if ($this->dual) {
+            parent::render() . "i cobra " . $this->salary;
+        } else {
+            parent::render();
+        }
     }
 }
