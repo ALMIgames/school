@@ -40,4 +40,9 @@ class Student extends Person
         $this->classroomGroup = $classroomGroup;
     }
 
+    public function render()
+    {
+        $this->type = "Estudiant";
+        parent::render();
+    }
 }

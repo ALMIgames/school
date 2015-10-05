@@ -8,6 +8,7 @@
  */
 class Person
 {
+    public $type = "persona";
     /**
      * Personal identification (f.e.; DNI, NIF, NIE...)
      * @var
@@ -221,6 +222,6 @@ class Person
 
     public function render()
     {
-        echo "L'estudiant es diu " . $this->getGivenName();
+        echo "La {$this->type} es diu " . $this->getGivenName();
     }
 }

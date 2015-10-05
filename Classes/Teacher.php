@@ -32,6 +32,10 @@ class Teacher extends Person
         $this->specialization = $specialization;
     }
 
-
+    public function render()
+    {
+        $this->type = "Professor";
+        parent::render();
+    }
 
 }
