@@ -5,7 +5,7 @@
  * Date: 5/10/15
  * Time: 20:25
  */
-require_once __DIR__ . 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use  Com\Iesebre\Dam2\albertmayor\Persons\Person;
 
