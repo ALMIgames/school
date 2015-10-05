@@ -1,4 +1,4 @@
-<?php
+<?php namespace Com\Iesebre\Dam2\albertmayor;
 
 /**
  * Created by PhpStorm.
@@ -18,12 +18,11 @@ class Student extends Person
      */
     public $classroomGroup;
 
-    public function __construct($dual = null)
+
+    function __construct($type, $personalId, $givenName, $sn1, $sn2, $email, $postalAddress, $locality, $postalCode, $state, $country, $dual)
     {
-        parent::__construct();
-        if ($dual != null) {
-            $this->dual = $dual;
-        }
+        parent:: __construct($type, $personalId, $givenName, $sn1, $sn2, $email, $postalAddress, $locality, $postalCode, $state, $country);
+
     }
 
 
