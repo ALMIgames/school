@@ -1,4 +1,4 @@
-<?php namespace Com\Iesebre\Dam2\albertmayor;
+<?php namespace Com\Iesebre\Dam2\albertmayor\Persons;
 
 /**
  * Created by PhpStorm.
@@ -9,21 +9,6 @@
 class Person
 {
     public $type = "persona";
-
-    function __construct($type, $personalId, $givenName, $sn1, $sn2, $email, $postalAddress, $locality, $postalCode, $state, $country)
-    {
-        $this->type = $type;
-        $this->personalId = $personalId;
-        $this->givenName = $givenName;
-        $this->sn1 = $sn1;
-        $this->sn2 = $sn2;
-        $this->email = $email;
-        $this->postalAddress = $postalAddress;
-        $this->locality = $locality;
-        $this->postalCode = $postalCode;
-        $this->state = $state;
-        $this->country = $country;
-    }
 
     /**
      * Personal identification (f.e.; DNI, NIF, NIE...)
@@ -238,6 +223,6 @@ class Person
 
     public function render()
     {
-        return "La {$this->type} es diu " . $this->getGivenName();
+        echo "La {$this->type} es diu " . $this->getGivenName();
     }
 }
