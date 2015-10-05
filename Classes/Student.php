@@ -11,10 +11,18 @@ class Student extends Person
 
     use Worker;
 
+    public $dual = false;
+
     /**
      * @var
      */
     public $classroomGroup;
+
+    public function __construct($dual = null)
+    {
+        $this->dual = $dual;
+    }
+
 
     /**
      * @return mixed
@@ -32,4 +40,13 @@ class Student extends Person
         $this->classroomGroup = $classroomGroup;
     }
 
+    public function render()
+    {
+        if($this->dual) {
+            echo "L'estudiant es diu " . $this->getGivenName() . " i cobra " . $this->salary . "€.";
+        }
+        else{
+            echo "L'estudiant es diu " . $this->getGivenName() . " i no cobra un duro el pobret...";
+        }
+    }
 }
