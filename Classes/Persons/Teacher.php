@@ -1,4 +1,4 @@
-<?php namespace Com\Iesebre\Dam2\albertmayor;
+<?php namespace Com\Iesebre\Dam2\albertmayor\Persons;
 
 /**
  * Created by PhpStorm.

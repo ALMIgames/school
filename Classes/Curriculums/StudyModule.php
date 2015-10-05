@@ -1,4 +1,4 @@
-<?php namespace Com\Iesebre\Dam2\albertmayor;
+<?php namespace Com\Iesebre\Dam2\albertmayor\Curriculums;
 /**
  * Created by PhpStorm.
  * User: albert
