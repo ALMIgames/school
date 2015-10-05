@@ -8,6 +8,9 @@
  */
 class Student extends Person
 {
+
+    use Worker;
+
     /**
      * @var
      */
