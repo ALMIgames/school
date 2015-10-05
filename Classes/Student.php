@@ -40,13 +40,4 @@ class Student extends Person
         $this->classroomGroup = $classroomGroup;
     }
 
-    public function render()
-    {
-        if($this->dual) {
-            echo "L'estudiant es diu " . $this->getGivenName() . " i cobra " . $this->salary . "€.";
-        }
-        else{
-            echo "L'estudiant es diu " . $this->getGivenName() . " i no cobra un duro el pobret...";
-        }
-    }
 }

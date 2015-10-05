@@ -1,12 +1,13 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: albert
  * Date: 5/10/15
  * Time: 18:13
  */
-
-class Person {
+class Person
+{
     /**
      * Personal identification (f.e.; DNI, NIF, NIE...)
      * @var
@@ -216,5 +217,10 @@ class Person {
     public function setPersonalId($personalId)
     {
         $this->personalId = $personalId;
+    }
+
+    public function render()
+    {
+        echo "L'estudiant es diu " . $this->getGivenName();
     }
 }
