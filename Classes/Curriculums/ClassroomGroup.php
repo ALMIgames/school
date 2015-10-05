@@ -8,6 +8,8 @@
 
 namespace Com\Iesebre\Dam2\albertmayor\Curriculums;
 
+use Com\Iesebre\Dam2\albertmayor\Persons\Student;
+
 
 /**
  * Class ClassroomGroup
@@ -17,11 +19,15 @@ class ClassroomGroup
 {
     public $students = array();
 
-    function __construct($students)
+    function __construct(array $students)
     {
         $this->students = $students;
     }
 
+    public function addStudent(Student $student)
+    {
+        array_push($this->students, $student);
+    }
 
     /**
      * @return array
