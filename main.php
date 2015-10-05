@@ -5,8 +5,9 @@
  * Date: 5/10/15
  * Time: 20:25
  */
+require_once __DIR__ . 'vendor/autoload.php';
+
 use  Com\Iesebre\Dam2\albertmayor\Persons\Person;
-require "/home/albert/Code/school/Classes/Persons/Person.php";
 
 $person = new Person();
 $person->type = "Senyoreta";
