@@ -511,8 +511,8 @@ p.tagline {
 }
 
 .download-bar .blc {
-  border: 10px solid black;
-  border-color: transparent transparent black;
+  border: 10px solid #333;
+  border-color: transparent transparent #333;
   width: 0;
   height: 0;
   display: block;
@@ -525,8 +525,8 @@ p.tagline {
 }
 
 .download-bar .trc {
-  border: 10px solid black;
-  border-color:  black transparent transparent;
+  border: 10px solid #333;
+  border-color:  #333 transparent transparent;
   width: 0;
   height: 0;
   display: block;
@@ -539,7 +539,7 @@ p.tagline {
 }
 
 .download-bar .avatar {
-  border: 1px solid black;
+  border: 1px solid #333;
   display: block;
   padding: 4px;
   float: left;
@@ -654,7 +654,7 @@ a.code:hover {
 }
 
 a.download-button {
-  border: 1px solid black;
+  border: 1px solid #333;
   border-radius: 3px;
   display: inline-block;
   text-indent: 0!important;
