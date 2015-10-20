@@ -9,6 +9,10 @@ $ composer install
 
 # Diagrama UML
 
-[Diagrama persons](
+[Diagrama persons](https://github.com/albertmayor/school/blob/master/diagramapersons.uml)
+
+![Imatge diagrama](http://url/to/img.png)
 
 # Pàgina web
+
+[albertmayor.github.io/school](http://albertmayor.github.io/school)
